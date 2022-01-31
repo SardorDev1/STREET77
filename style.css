@@ -1,0 +1,453 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --fm: 'Raleway', sans-serif;
+    --fm_roboto: 'Roboto', sans-serif;
+    --fm_thin: 100;
+    --fm-light: 300;
+    --fm-regulyar: 400;
+    --fm-bold: 700;
+    --fm-black: 900;
+    --gren_75: rgba(105, 207, 23, 0.75);
+    /* active uchun */
+    --green_90: rgba(105, 207, 23, 0.9);
+    /* gamburger uchun */
+    --green: #69cf17;
+    /* link uchun */
+    --green_1: #4d9c0d;
+    /* logo uchun */
+    --green_2: #62be19;
+    /* logo border uchun */
+    --white: #fff;
+    --white_p: #dedede;
+    /* header paragrifi uchun */
+    --gray: #7a7a7a;
+    /* section link uchun */
+    --dark: #060002;
+    /* body uchun */
+    --black: rgba(0, 0, 0, 0.1);
+    /* logo shadowi uchun */
+
+
+    --col-1: calc(100% / 12 * 1);
+    --col-2: calc(100% / 12 * 2);
+    --col-3: calc(100% / 12 * 3);
+    --col-4: calc(100% / 12 * 4);
+    --col-5: calc(100% / 12 * 5);
+    --col-6: calc(100% / 12 * 6);
+    --col-7: calc(100% / 12 * 7);
+    --col-8: calc(100% / 12 * 8);
+    --col-9: calc(100% / 12 * 9);
+    --col-10: calc(100% / 12 * 10);
+    --col-11: calc(100% / 12 * 11);
+    --col-12: calc(100% / 12 * 12);
+
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+
+.justify-content-center {
+    justify-content: center;
+
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+
+}
+
+.justify-content-between {
+    justify-content: space-between;
+
+}
+
+.align-items-start {
+    align-items: flex-start;
+
+}
+
+.align-items-center {
+    align-items: center;
+
+}
+
+.align-items-end {
+    align-items: flex-end;
+
+}
+
+.flex-direction-colum {
+    flex-direction: column;
+}
+
+.col-12 {
+    width: var(--col-12);
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: var(--col-4);
+    padding: 0 15px;
+}
+
+
+header {
+    width: 100%;
+    background-image: url('./images/STREET_01.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 768px;
+
+}
+
+.logo {
+    background-color: var(--green_1);
+    padding: 11px 21px;
+    border: 3px solid var(--green_2);
+    color: var(--white);
+    border-radius: 5px;
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: var(--fm-bold);
+    font-family: var(--fm);
+    box-shadow: inset 0px 0px 2 var(--fm-black);
+
+}
+
+header nav ul {
+    display: flex;
+
+}
+header nav ul li{
+    margin-top: 40px;
+}
+header nav ul li a {
+    font-size: 20px;
+    font-weight: var(--fm-light);
+    color: var(--green);
+    padding: 30px 25px 30px 25px;
+
+}
+header nav ul li a:hover{
+    color: var(--white);
+    background-color: var(--gren_75);
+   margin: 0%;
+}
+header nav ul li .active {
+    color: var(--white);
+    background-color: var(--gren_75);
+    
+}
+
+header nav ul li span {
+    width: 24px;
+    padding: 0px 7px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--green);
+}
+
+ header .container  .row h1 {
+    font-weight: var(--fm-black);
+    font-size: 72px;
+    font-family: var(--fm);
+    color: var(--green);
+    margin-left: 5%;
+    margin-top: 148px;
+    margin-bottom: 18px;
+}
+
+.row p:nth-of-type(1) {
+    font-size: 36px;
+    font-family: var(--fm);
+    margin-left: 5%;
+    margin-bottom: 30PX;
+    font-weight: var(--fm-regulyar);
+    color: var(--green);
+}
+
+.row .align-items-start p:nth-of-type(2) {
+    font-size: 18PX;
+    margin-left: 5%;
+    font-family: var(--fm);
+    font-weight: var(--fm-regulyar);
+    color: var(--white);
+}
+
+.row p:nth-of-type(3) {
+    position: relative;
+    padding: 20px 40px;
+    margin-left: 5%;
+    font-size: 70px;
+    font-family: var(--fm);
+    font-weight: var(--fm_thin);
+    color: var(--white);
+    margin-top: 30px;
+    background-color: var(--gren_75);
+    cursor: pointer;
+}
+
+section nav ul {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+section nav ul li {
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: var(--fm-regulyar);
+    font-family: var(--fm);
+}
+
+section nav ul li a {
+    color: var(--gray);
+
+}
+
+section nav ul li .active {
+    color: var(--green);
+}
+
+section nav ul li a:hover {
+    color: var(--green);
+}
+
+section .row .wrap {
+    max-width: 100%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    position: relative;
+    background-image: url('./images/gamburger_03.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+section .row .wrap span {
+    position: absolute;
+    padding: 20px 40px;
+    margin-left: 138px;
+    font-size: 70px;
+    font-family: var(--fm);
+    font-weight: var(--fm_thin);
+    color: var(--white);
+    margin-top: 30px;
+    background-color: var(--gren_75);
+    cursor: pointer;
+
+    bottom: 0;
+    margin-left: 0px;
+}
+
+section .row .wrap button {
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 500ms;
+    opacity: 0;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: var(--fm_regular);
+    border: none;
+}
+
+section .row .wrap button:hover {
+    opacity: 1;
+}
+
+section .row .col-4 h2 {
+    font-size: 35px;
+    font-family: var(--fm);
+    font-weight: var(--fm_regular);
+    color: var(--green);
+    margin-top: 30px;
+}
+
+section .row .col-4 p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 0;
+    color: var(--white);
+}
+
+#o_нас {
+    background-image: url('./images/bacground-s_06.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+#o_нас h2 {
+    font-size: 26px;
+    text-align: center;
+    color: var(--green);
+    padding-top: 100px;
+    font-family: var(--fm_roboto);
+    font-weight: var(--fm-regulyar);
+
+}
+
+#o_нас h2::after {
+    width: 200px;
+    height: 2px;
+    content: "";
+    display: block;
+    margin-top: 36px !important;
+
+    margin: auto;
+    background-color: var(--green);
+}
+
+#o_нас p {
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 36px;
+    padding: 20px;
+    line-height: 30px;
+    font-family: var(--fm);
+}
+
+
+#o_нас .fileal {
+    width: 100%;
+    height: 100px;
+    background-color: var(--white);
+}
+
+#o_нас .fileal h1 {
+    font-size: 35px;
+    font-family: var(--fm_roboto);
+    font-weight: var(--fm-regulyar);
+    color: var(--green);
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer ul li {
+    color: var(--white);
+    font-size: 32px;
+    font-family: var(--fm_roboto);
+}
+
+footer nav ul {
+    margin-left: 50px !important;
+    margin-top: 100px;
+
+}
+
+footer nav ul li a {
+    color: var(--white) !important;
+    font-size: 16px;
+    font-family: var(--fm_roboto);
+    margin-left: 20px;
+    text-align: center;
+
+
+}
+
+footer .row ul li a:hover {
+    color: var(--green) !important;
+}
+
+footer h4 {
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: var(--fm_roboto);
+    text-align: center !important;
+    color: var(--white) !important;
+
+}
+
+
+@media(max-width:576px) {
+    .col-sm-12 {
+        width: var(--col-12);
+    }
+
+    section .row .wrap {
+        width: 380px;
+        height: 350px;
+    }
+
+    section .row .wrap span {
+        padding: 10px 5px;
+    }
+    header .container  .row h1 {
+        font-size: 40px;
+    }
+    header .container .row .col-12 a{
+        margin: auto;
+    }
+}
+
+
+
+@media (min-width:577px)and (max-width:768px) {
+    .col-md-6 {
+        width: var(--col-6);
+    }
+
+    section .row .wrap {
+        width: 250px;
+        height: 300px;
+    }
+
+    section .row .wrap span {
+        padding: 10px 5px;
+    }
+    header .container .row .col-12 a{
+        margin: auto;
+    }
+}
+@media (min-width:769px)and (max-width:992px) {
+    .col-lg-4 {
+        width: var(--col-4);
+    }
+
+    section .row .wrap {
+        width: 250px;
+        height: 250px;
+    }
+
+    section .row .wrap span {
+        padding: 10px 5px;
+    }
+    
+}
